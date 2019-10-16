@@ -13,8 +13,10 @@
 #import "SPUDownloader.h"
 #import "SPUDownloaderDelegate.h"
 
+#import "SUExport.h"
+
 @class SUAppcast, SUAppcastItem, SUHost, SPUDownloadData;
-@interface SUBasicUpdateDriver : SUUpdateDriver <SPUDownloaderDelegate>
+SU_EXPORT @interface SUBasicUpdateDriver : SUUpdateDriver <SPUDownloaderDelegate>
 
 @property (strong, readonly) SUAppcastItem *updateItem;
 @property (strong, readonly) SUAppcastItem *latestAppcastItem;

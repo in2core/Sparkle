@@ -11,11 +11,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "SUExport.h"
+
 extern NSString *const SUUpdateDriverFinishedNotification;
 
 @class SUHost, SUUpdater;
 @protocol SUUpdaterPrivate;
-@interface SUUpdateDriver : NSObject
+SU_EXPORT @interface SUUpdateDriver : NSObject
 
 // We only have SUUpdater* forward declared intentionally (i.e, not #import'ing SUUpdater.h in the update drivers)
 // This is so we can minimize what we can access using SUUpdaterPrivate

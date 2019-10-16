@@ -20,6 +20,8 @@
 #import "SUVersionComparisonProtocol.h"
 #import "SUVersionDisplayProtocol.h"
 #import "SUErrors.h"
+#import "SUUpdateDriver.h"
+#import "SUBasicUpdateDriver.h"
 
 #import "SPUDownloader.h"
 #import "SPUDownloaderDelegate.h"
