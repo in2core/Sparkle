@@ -27,7 +27,9 @@ SU_EXPORT @interface SUBasicUpdateDriver : SUUpdateDriver <SPUDownloaderDelegate
 - (void)checkForUpdatesAtURL:(NSURL *)URL host:(SUHost *)host;
 
 - (BOOL)isItemNewer:(SUAppcastItem *)ui;
+- (BOOL)itemPreventsAutoupdate:(SUAppcastItem *)ui;
 - (BOOL)hostSupportsItem:(SUAppcastItem *)ui;
+- (BOOL)usesPhasedRollout;
 - (BOOL)itemContainsSkippedVersion:(SUAppcastItem *)ui;
 - (BOOL)itemContainsValidUpdate:(SUAppcastItem *)ui;
 - (void)appcastDidFinishLoading:(SUAppcast *)ac;
